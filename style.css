@@ -1,0 +1,48 @@
+* {
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+
+}
+
+.slider-container {
+    width: 300px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+.value-display {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.container {
+    display: flex;
+    border-style: solid;
+
+}
+
+.boxhz {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 20px;
+    height: 20px;
+
+
+}
+
+.box:hover {
+    background-color: aliceblue;
+}

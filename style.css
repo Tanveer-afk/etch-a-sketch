@@ -1,15 +1,10 @@
 * {
 
-    background-color: black;
+    background-color: wheat;
     color: white;
 }
 
-body {
-    display: flex;
-    justify-content: space-between;
-    padding: 100px;
 
-}
 
 .slider-container {
     width: 300px;
@@ -32,15 +27,19 @@ input[type="range"] {
 
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    padding: 45px;
 }
 
 .container {
     display: flex;
     border-style: solid;
-
-
-
+    background-color: white;
+    box-shadow: 4px 4px 10px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-bottom: 50px;
 }
 
 
@@ -53,6 +52,123 @@ body {
 .box {
     width: 30px;
     height: 30px;
+    background-color: white;
+
+}
+
+.all {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sliderbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    padding: 50px;
+    margin-top: 300px;
+
+}
+
+.contacts {
+    display: flex;
+    margin-top: 100px;
+    padding: 10px;
+    justify-content: center;
+    gap: 16px;
+
+}
 
 
+
+
+
+.restartbtn {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    border: 2px solid;
+    border-color: rgb(102, 89, 67);
+    color: rgb(102, 89, 67);
+    border-radius: 10px;
+
+}
+
+.restart button {
+    display: block;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+    position: relative;
+}
+
+.restart button:hover,
+.contacts a:hover {
+    transform: scale(1.1);
+    opacity: 0.5;
+}
+
+.restart button:active,
+.contacts a:active {
+    transform: scale(1);
+}
+
+.restartbtnholder {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 150px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 10px;
+    background-color: rgb(167, 152, 125);
+
+    border-radius: 5px;
+    outline: none;
+}
+
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 25px;
+    border-radius: 0%;
+    background-color: rgb(255, 255, 255);
+
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+
+    cursor: pointer;
 }

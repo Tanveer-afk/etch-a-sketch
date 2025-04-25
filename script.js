@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
-const slider = document.getElementById('gridSizeSlider'); // Get the slider element  ***ADDED***
-const gridSizeDisplay = document.getElementById('gridSizeDisplay'); // Get the display span element  ***ADDED***
+const slider = document.getElementById("slider");
+
 
 const box = document.querySelector('.box');
 
@@ -22,7 +22,7 @@ document.addEventListener('mouseup', () => {
 
 let gridsize = 10;
 
-gridsize = prompt('Enter the grid size:');
+//gridsize = prompt('Enter the grid size:');
 
 
 gridsize = parseInt(gridsize, 10);
@@ -31,16 +31,23 @@ if (isNaN(gridsize) || gridsize <= 0) {
 }
 
 
-container.style.width = '800px';
-container.style.height = '800px';
+container.style.width = '744px';
+container.style.height = '744px';
+
+
+slider.addEventListener("input", function () {
+    console.log(slider.value);
+    let x = slider.value;
+    clearGrid();
+    creategrid(x);
+});
+
+
+//creategrid(prompt('Enter'));
 
 
 
 
-
-
-
-creategrid(gridsize);
 
 
 

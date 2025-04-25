@@ -39,6 +39,8 @@ function creategrid(gridsize) {
 
     let boxSize = Math.floor(800 / gridsize);
 
+    gridsize = gridsize * 1.1;
+
     for (let i = 0; i < gridsize; i++) {
         const boxhz = document.createElement('div');
         boxhz.textContent = "";
@@ -65,7 +67,7 @@ function creategrid(gridsize) {
 
 
 
-                    if (currentColor === 'rgb(0, 0, 0)') {
+                    if (currentColor === 'rgb(255, 255, 255)') {
 
                         boxver.style.backgroundColor = getRandomColor()
                     }
@@ -83,4 +85,10 @@ function creategrid(gridsize) {
         }
     }
 
+}
+
+function clearGrid() {
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);  // Remove all child elements from container
+    }
 }

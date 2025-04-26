@@ -87,8 +87,11 @@ function creategrid(gridsize) {
 
 }
 
+
+
+
 function clearGrid() {
     while (container.firstChild) {
-        container.removeChild(container.firstChild);  // Remove all child elements from container
+        container.removeChild(container.firstChild);
     }
 }

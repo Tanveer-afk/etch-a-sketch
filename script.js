@@ -43,14 +43,39 @@ slider.addEventListener("input", function () {
 });
 
 
+
+
+
+
+
+document.getElementById('captureBtn').addEventListener('click', function () {
+
+    var div = document.querySelector('.container');
+
+
+    domtoimage.toBlob(div)
+        .then(function (blob) {
+            var link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'snapshot.png';
+            link.click();
+        })
+        .catch(function (error) {
+            console.error("Error capturing the div:", error);
+        });
+});
+
+
+
+
+
+
+
+//------------------IGNORE old code--------------------// 
+
+
+
 //creategrid(prompt('Enter'));
-
-
-
-
-
-
-
 
 
 /*

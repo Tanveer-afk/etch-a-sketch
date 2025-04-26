@@ -57,7 +57,7 @@ document.getElementById('captureBtn').addEventListener('click', function () {
         .then(function (blob) {
             var link = document.createElement('a');
             link.href = URL.createObjectURL(blob);
-            link.download = 'snapshot.png';
+            link.download = 'sketch.png';
             link.click();
         })
         .catch(function (error) {
